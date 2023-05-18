@@ -19,16 +19,14 @@ def hows_the_weather(temperature)
 end
 
 def fizzbuzz(num)
-  if num % 3 == 0
-    if num % 5 == 0
+  if num % 3 == 0 and num % 5 == 0
       return "fizzbuzz"
-    else
+  elsif num % 3 == 0
       return "fizz"
-    end 
-  else
-    if num % 5 == 0
+  elsif num % 5 == 0
       return "buzz"
-    end
+    else num % 3!=0 and num % 5!=0
+      return num
 end
 
 def calculator(operation, num1, num2)
